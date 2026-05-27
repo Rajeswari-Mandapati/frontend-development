@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <title>my first form</title>
+  </head>
+  <body>
+    <h1>LillyMandapatti Registration Form</h1>
+
+    <form
+      action="getdata.py"
+      method="post"
+      novalidate
+      enctype="multipart/form-data"
+      autocomplete="=on"
+    >
+      <label for="un">Username:</label><sup>*</sup>
+      <input type="text" id="un" name="username" required /><br /><br />
+
+      <label for="fn">Fullname:</label>
+      <input type="text" id="fn" name="fullname" autofocus /><br /><br />
+
+      <label for="psd">Password:</label>
+      <input type="password" id="psd" name="password" readonly /><br /><br />
+
+      Gender:
+      <input type="radio" id="f" name="gender" />
+      <label for="f">female:</label>
+
+      <input type="radio" id="m" name="gender" />
+      <label for="m">male:</label><br /><br />
+
+      LANGUAGES KNOWN:
+      <input type="checkbox" id="tel" name="telugu" />
+      <label for="tel">telugu</label>
+
+      <input type="checkbox" id="eng" name="english" />
+      <label for="eng">english</label>
+
+      <input type="checKbox" id="hin" name="hindi" />
+      <label for="hin">hindi</label><br /><br />
+
+      <label for="m"> mobile:</label>
+      <input
+        type="tel"
+        id="m"
+        name="mobile"
+        placeholder="+91 9390334142"
+      /><br /><br />
+
+      <label for="em">email ID:</label>
+      <input type="email" id="em" name="email" /><br /><br />
+
+      <label for="oaty">only applly this years:</label>
+      <input
+        type="date"
+        id="oaty"
+        name="date of birth"
+        min="2000-01-01"
+        max="2003-09-03"
+      /><br /><br />
+
+      <fieldset>
+        <legend>DOB</legend>
+        <label for="dob">date of birth:</label>
+        <input type="date" id="dob" name="date of birth" /><br /><br />
+
+        <label for="dat">date and time mention:</label>
+        <input type="datetime-local" />
+      </fieldset>
+      <br /><br />
+
+      <label for="fc">mention favorite colors for gifts</label>
+      <input list="clrs" id="fc" name="fc" />
+      <datalist id="clrs">
+        <option>yellow</option>
+        <option>purple</option>
+        <option>skyblue</option></datalist
+      ><br /><br />
+
+      <label for="t">time:</label>
+      <input type="time" id="t" name="time" /><br /><br />
+
+      <label for="w">how many watches required:</label>
+      <input type="range" id="w" name="watches" /><br /><br />
+
+      <label for="c">favorite color:</label>
+      <input type="color" id="c" name="color" /><br /><br />
+
+      <label for="r">upload resume:</label>
+      <input type="file" id="r" name="r" /><br /><br />
+
+      <label for="lp">linkedin profile:</label>
+      <input type="url" id="lp" name="profile url" /><br /><br />
+
+      <label for="addr">Address:</label>
+      <textarea rows="5" cols="20"></textarea><br /><br />
+
+      <label for="cntry">country:</label>
+      <select id="cntry" name="country">
+        <option>IN</option>
+        <option>UK</option>
+        <option>US</option></select
+      ><br /><nbr />
+
+      <input
+        type="image"
+        src="../india.png"
+        width="50"
+        height="60"
+      /><br /><br />
+
+      <input type="reset" /><br /><br />
+
+      <input type="submit" value="register" diasabled />
+    </form>
+  </body>
+</html>
